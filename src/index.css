@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+#counter {
+	width: 80%;
+	padding: 100px;
+	margin: 0 auto;
+}
+
+#counter-label{
+	margin-bottom: 100px;
+}
+
+#counter-btn {
+	width: 100px;
+}
+
+
+
+

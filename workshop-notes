@@ -1,0 +1,26 @@
+install node.js
+
+npm install -g create-react-app
+create-react-app ml-counter
+cd ml-counter
+npm install --save react-bootstrap
+npm start
+
+links to bootstrap resources and shake CSS
+
+delete everything except for index.css index.js
+demo render
+
+make components folder
+make App.jsx
+show render method
+title, number, button
+
+separate to Counter.jsx
+show component state
+onClick handler to increment
+CSS styling
+change color/shaking
+
+pass props handler to Counter
+
