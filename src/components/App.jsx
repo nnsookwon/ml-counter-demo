@@ -11,7 +11,7 @@ class App extends Component {
 		return (
 			<div className="text-center">
 				<h1>Machine Learning Counter</h1>
-				<Counter handleWarning={this.alertMessage}/>
+				<Counter handleWarning={this.alertMessage} maxCount="37"/>
 			</div>
 		)
 

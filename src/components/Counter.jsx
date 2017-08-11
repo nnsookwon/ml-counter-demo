@@ -11,12 +11,13 @@ class Counter extends Component {
 	}
 
 	componentDidUpdate(prevProps, prevState) {
-		if (prevState.count == 34 && this.state.count == 35)
+		if (prevState.count == this.props.maxCount-1
+			&& this.state.count == this.props.maxCount)
 			this.props.handleWarning();
 	}
 
 	incrementCount() {
-		this.setState((prevState, props) => {
+		this.setState((prevState) => {
 			return { count: prevState.count + 1 }
 		})
 	}
@@ -41,7 +42,8 @@ class Counter extends Component {
 			<div id="counter" className={alertClass + " " + shakeClass} >
 				<h2 id="counter-label">{this.state.count}</h2>
 				<button id="counter-btn"
-					onClick={this.incrementCount}>+1</button>
+					onClick={this.incrementCount}
+					disabled={this.state.count >= this.props.maxCount}>+1</button>
 			</div>
 		)
 	}
